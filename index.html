@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a simple webpage.</p>
+    <!-- 添加一个按钮 -->
+    <button onclick="displayMessage()">Click me!</button>
+    <!-- 消息显示区域 -->
+    <p id="message"></p>
+    <script>
+        function displayMessage() {
+            document.getElementById("message").innerText = "Hello, you've clicked the button!";
+        }
+    </script> 
+    <!-- 添加输入框和按钮 -->
+<input type="text" id="userInput" placeholder="Type something...">
+<button onclick="showInput()">Submit</button>
+
+<!-- 显示用户输入内容 -->
+<p id="display"></p>
+
+<script>
+    function showInput() {
+        var input = document.getElementById("userInput").value;
+        document.getElementById("display").innerText = "You typed: " + input;
+    }
+</script>
+   
+</body>
+</html>
